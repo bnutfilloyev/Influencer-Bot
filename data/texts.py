@@ -49,13 +49,13 @@ influencers_category = {
         'fashion': '⭕️fashion',
         'sports': '⭕️sports',
         'technology': '⭕️technology',
-    }
+    },
     'ru': {
         'food': '⭕️Еда',
         'fashion': '⭕️Мода',
         'sports': '⭕️Спорт',
         'technology': '⭕️Технологии',
-    }
+    },
     'uz': {
         'food': '⭕️Oziq-ovqat',
         'fashion': '⭕️Kiyim',
