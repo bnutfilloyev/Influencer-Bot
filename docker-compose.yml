@@ -13,7 +13,7 @@ services:
     command: python3 -m bot
     restart: always
     env_file:
-      - ".envs/.local/.bot"
+      - ".env"
     networks:
     - tg_bot
 

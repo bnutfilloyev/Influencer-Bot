@@ -19,11 +19,14 @@ install: generate_dot_env
 	pip install -r requirements.txt
 
 run:
-	python bot.py
+	python app.py
 
 deploy: generate_dot_env
 	docker-compose build
 	docker-compose up -d
+
+logs:
+	docker-compose logs -f
 
 down:
 	docker-compose down
