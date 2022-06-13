@@ -4,7 +4,6 @@ from data.texts import inf_cat_check, influencers_category, texts
 from keyboards.inline.categories import (
     influencers_seller_categories,
     services_categories,
-    create_post_categories,
 )
 from loader import dp
 from utils.db_api import users
@@ -29,24 +28,9 @@ async def influencers_category_handler(call, state: FSMContext):
         )
 
 
-@dp.callback_query_handler(text_contains="create")
-async def create_influencer(call, state: FSMContext):
-    async with state.proxy() as data:
-        # For get location
-        # if users.find_one({"user_id": call.from_user.id}).get("location", False):
-        #     await call.message.edit_text(
-        #         texts[data["lang"]]["location_question"],
-        #         reply_markup=await create_post_categories(data["lang"]),
-        #     )
 
-        await call.message.edit_text(
-            texts[data["lang"]]["create_post"],
-            reply_markup=await create_post_categories(data["lang"]),
-        )
-
-
-
-@dp.callback_query_handler()
-async def callback_handler(call, state: FSMContext):
-    print(call.data)
-    print(call.data in list(influencers_category.popitem()[-1].keys()))
+#
+# @dp.callback_query_handler()
+# async def callback_handler(call, state: FSMContext):
+#     print(call.data)
+#     print(call.data in list(influencers_category.popitem()[-1].keys()))
