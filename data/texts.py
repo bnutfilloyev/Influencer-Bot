@@ -5,8 +5,8 @@ select_lang = {
 }
 
 user_menu_text = {
-    "en": {"influencers": "⭕influencer - sell", "brand_buyer": "⭕brand - buy",},
-    "uz": {"influencers": "Influencers", "brand_buyer": "Brand Buyer",},
+    "en": {"influencers": "⭕influencer - sell", "brand_buyer": "⭕brand - buy", },
+    "uz": {"influencers": "Influencers", "brand_buyer": "Brand Buyer", },
 }
 
 texts = {
@@ -21,6 +21,9 @@ texts = {
         "location": "Выберите город:",
         "create_post": "Создать пост",
         'video_post': 'Video post - price\nVideo post - description\nvideo post - sample link',
+        'photo_post': 'Photo post - price\nPhoto post - description\nphoto post - sample link',
+        'text_post': 'Text post - price\nText post - description\ntext post - sample link',
+        'comment_post': "🟢Comments Post:",
     },
     "en": {
         "start": "Welcome to our influencer platform",
@@ -32,6 +35,9 @@ texts = {
         "services_category": "Influencers - seller service:",
         "location": "Select country:",
         "create_post": "🟢Creat Post:",
+        'video_post': 'Video post - price\nVideo post - description\nvideo post - sample link',
+        'comment_post': "🟢Comments Post:",
+
     },
     "uz": {
         "start": "Xush kelibsiz!",
@@ -43,6 +49,8 @@ texts = {
         "services_category": "Influencers - seller service:",
         "location": "Manzilni tanlang:",
         "create_post": "🟢Post yaratish:",
+        'video_post': 'Video post - price\nVideo post - description\nvideo post - sample link',
+        'comment_post': "🟢Comments Post:",
     },
 }
 
@@ -97,7 +105,14 @@ countries = {
 }
 
 create_post = {
-    "en": {"video": "⭕️Video", "photo": "⭕️Photo", "text": "⭕️Text",},
-    "ru": {"video": "⭕️Видео", "photo": "⭕️Фото", "text": "⭕️Текст",},
-    "uz": {"video": "⭕️Video", "photo": "⭕️Photo", "text": "⭕️Text",},
+    "en": {"video": "⭕️Video", "photo": "⭕️Photo", "text": "⭕️Text", },
+    "ru": {"video": "⭕️Видео", "photo": "⭕️Фото", "text": "⭕️Текст", },
+    "uz": {"video": "⭕️Video", "photo": "⭕️Photo", "text": "⭕️Text", },
 }
+
+comment_post = {
+    "en": {1: "1 comment - price", 5: "5 comments - price", 10: "10 comments -price ", },
+    "uz": {1: "1 comment - price", 5: "5 comments - price", 10: "10 comments -price ", },
+    "ru": {1: "1 comment - price", 5: "5 comments - price", 10: "10 comments -price ", },
+}
+
