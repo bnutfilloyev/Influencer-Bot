@@ -1,6 +1,11 @@
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from data.texts import influencers_category, services, user_menu_text, create_post
+from data.texts import (influencers_category,
+                        services,
+                        user_menu_text,
+                        create_post,
+                        comment_post
+                        )
 
 
 async def user_menu_keyboard(lang):
@@ -38,5 +43,12 @@ async def services_categories(lang):
 async def create_post_categories(lang):
     keyboard = InlineKeyboardMarkup()
     for item, value in create_post[lang].items():
+        keyboard.add(InlineKeyboardButton(text=value, callback_data=item))
+    return keyboard
+
+
+async def comment_post_categories(lang):
+    keyboard = InlineKeyboardMarkup()
+    for item, value in comment_post[lang].items():
         keyboard.add(InlineKeyboardButton(text=value, callback_data=item))
     return keyboard
